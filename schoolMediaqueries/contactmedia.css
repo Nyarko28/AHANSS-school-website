@@ -1,0 +1,202 @@
+@media screen and (max-width:1000px){
+    body{
+        margin: 0;
+    }
+    header nav{
+        display: none;
+    }
+    header{
+        gap: 0;
+    }
+    .logo{
+        width: 70%;
+        margin-left: -20%;
+    }
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+   
+    footer{
+        padding: 8px;
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        color: darkorange;
+        margin: 0;
+
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        margin: 0;
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+    .parallax{
+   
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: rgb(125, 188, 244);
+    }
+    .map_flex{
+        width: 90%;
+       
+        display: flex;
+       
+        flex-direction: column-reverse;
+        justify-content: center;
+        place-self: center;
+        align-items: center;
+        gap: 3rem;
+        align-self: center;
+        margin-left: 5%;
+    }
+    .container{
+        width: 80%;
+
+    }
+    .comment{
+    width: 100%;
+    display: block;
+     min-height: 16rem;
+    }
+    .contact_info{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .contact_card{
+        width: 20%;
+        height: 80%;
+        box-sizing: border-box;
+        
+    }
+    .contact_card a{
+        font-size: 1rem;
+        color: rgb(9, 10, 9);
+    }
+    .contact_card img{
+        width: 3rem;
+        
+    }
+    .address{
+        font-size: 1.2rem;
+    }
+    .m{
+        display: none;
+    }
+    .break{
+        display: block;
+        margin-top: 2rem;
+    }
+    .contact_intro{
+        height: 30%;
+    }
+
+    
+}
+
+
+@media screen and (max-width:450px) {
+    .contact_intro{
+        background-position:center;
+        background-size: cover;
+      
+        background-origin:unset;
+        background-attachment:local;
+        width: auto;
+    }
+    .contact_info{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: 44% 40%;
+       row-gap: 2rem;
+       
+        
+    }
+    .contact_card{
+        width: 90%;
+        box-shadow: none ;
+        background: none;
+
+        
+    }
+    .contact_card img{
+        object-fit: cover;
+        object-position: center;
+        height: 17%;
+    }
+    .map_flex{
+        margin-top: 18rem;
+    }
+    .container{
+ height: fit-content;
+ 
+
+    }
+    input{
+        height: auto;
+    }
+    .login{
+        height: auto;
+    }
+    .comment{
+    height: 40%;
+    }
+    footer{
+        width: 100%;
+        
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+       padding-top: 4px;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+       ;
+        margin: 7px 0px;
+    
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+        color: black;
+    }
+    small{
+        color: #000000;
+    }
+}
+@media screen and (min-width:1001px){
+    .kibab_menu{
+        display: none;
+    }
+}

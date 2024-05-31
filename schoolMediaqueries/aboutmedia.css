@@ -1,0 +1,263 @@
+@media  screen and (max-width:690px){
+    
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+    .kibab_menu{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    header{
+        gap: 0;
+        
+
+    }
+    .logo{
+       
+        width: 60%;
+        left: -2em;
+        position: relative; 
+    }
+    .logo_img{
+        position: absolute;
+        left: 2rem;
+    }
+    .intro{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin: 0;
+    }
+    .intro video{
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .mission{
+        margin-top:-50%;
+        height: auto;
+    }
+    .missoion_statement{
+        margin-top: -20rem;
+    }
+    
+
+}
+
+@media screen and (max-width:570px){
+    .missoion_statement{
+        margin-top: -15rem;
+
+        
+    }footer{
+        width: 100%;
+        
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+       padding-top: 4px;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        color: darkorange;
+        margin: 7px 0px;
+    
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+.missoion_statement h1{
+    margin-left: 9%;
+   
+}
+}
+@media screen and (min-width:370px) and (max-width:430px){
+    .missoion_statement{
+        margin-top: -6rem;
+    }
+
+}
+
+@media screen and (min-width:700px){
+    .missoion_statement{
+        margin-top: -6rem;
+    }
+}
+@media screen and (min-width:900px){
+    .missoion_statement{
+        margin-top:5%;
+    }
+}
+
+ @media screen and (max-width:1020px){
+    
+    
+        .kibab{
+            display: flex;
+            margin-right: 1rem;
+        }
+        .kibab_menu{
+            display: block;
+        }
+        header nav{
+            display: none;
+        }
+        header{
+            gap: 0;
+            
+    
+        }
+        .logo{
+           
+            width: 50%;
+            left: -2em;
+            position: relative; 
+        }
+        .logo_img{
+            position: absolute;
+            left: 2rem;
+        }
+        
+        .intro{
+            width: 100%;
+            height: 80vh;
+            margin-top: 0;
+            margin: 0;
+        }
+        .intro video{
+            width: 100%;
+            margin: 0;
+        }
+        .mission{
+            margin-top:auto ;
+            height: auto;
+        }
+
+        footer{
+            padding: 8px;
+           height: fit-content;
+           text-align: center;
+           align-items: center;
+           align-content: center;
+           margin: 0;
+        }
+        footer nav{
+            display: flex;
+            flex-direction: column;
+            color: darkorange;
+            margin: 0;
+    
+            
+        }
+        .social_handles{
+            width: 30%;
+            height: 30%;
+            margin: 0;
+        }
+        .social_handles img{
+            width: 2rem;
+        }
+        footer span{
+            font-size: 1.7rem;
+        }
+        footer p{
+            font-size: 1.3rem;
+        }
+    }
+ 
+ /*@media screen and(m-width:700px){
+    body{
+        background-color: aquamarine;
+    }
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+    header nav{
+        display: none;
+    }
+    header{
+        gap: 0;
+        
+
+    }
+    .logo{
+       
+        width: 60%;
+        left: -2em;
+        position: relative; 
+    }
+    .logo_img{
+        position: absolute;
+        left: 2rem;
+    }
+    .intro{
+        width: 100%;
+        height: 80vh;
+        margin-top: 0;
+        margin: 0;
+    }
+    .intro video{
+        width: 100%;
+        margin: 0;
+        display: none;
+    }
+} */
+/*  || xl */
+/*@media screen and (min-width:1200px) {
+    body{
+        background-color: rgb(226, 219, 234);
+    }
+}
+
+    /* || large */
+/*@media screen and (min-width:992px) {
+    body{
+        background-color:blueviolet;
+    }
+}*/
+/* || large */
+@media screen and (min-width:1000px) {
+    
+    .logo{
+        width: 20%;
+        height: 80%;  
+        z-index: 1;
+    }
+    .logo_img{
+        
+        width: 30%;
+        height: 100%;
+    }
+}
+
+/* || mobile device landscape  */
+
+ @media screen and (max-height:425px) and (min-aspect-ratio:7/4){
+    body{
+        background-color: rgb(255, 253, 160);
+    }
+} 
+@media screen and (min-width:1001px){
+    .kibab_menu{
+        display: none;
+    }
+} 

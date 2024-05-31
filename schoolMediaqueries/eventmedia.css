@@ -1,0 +1,187 @@
+@media (max-width:1000px){
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+    header nav{
+        display: none;
+    }
+    .logo{
+       
+        width: 60%;
+        left: -1rem;
+        position: relative;
+       
+        
+    }
+    .logo_img{
+        position: absolute;
+        left: 2rem;
+    }
+   
+    .coming_card_container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .coming_card{
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+       
+    .stool_info{
+        flex-direction: column;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    }
+    
+@media screen and (max-width:450px) {
+   .upcoming h2{
+   font-size: 4rem;
+}
+.recent{
+    font-size: 4rem;
+   
+
+    align-items: center;
+    margin-top: 3rem;
+    height: 15vh;
+}
+.event_video{
+    height: fit-content;
+}
+.stool_pic{
+    width: 100%;
+    margin-left: 0;
+   
+   
+    background-image: none;
+}
+.stool_pic img{
+    display: block;
+    width: 100%;
+    height: 60vh;
+    object-position: center;
+    object-fit: scale-down;
+}
+.stool_content{
+width: 100%;
+
+}
+.event_video video{
+    width: 90%;
+    margin-left: 5%;
+
+    object-fit:cover ;
+  margin-top: 3rem;
+    height: auto;
+}
+
+.freshers_info{
+    width: 100%;
+    background: none;
+    flex-direction: column;
+    margin-left: 0;
+}
+.freshers_info div{
+    width: 100%;
+    margin-left: 0;
+    box-shadow: none;
+}
+.freshers_info div img{
+ object-fit: coer;
+ object-position: center;
+ width: 100%;
+}
+.freshers{
+    width: 100%;
+    height:fit-content ;
+}
+
+.heritage_flyer{
+   
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.heritage_flyer p{
+    width: 100%;
+}
+.flyer{
+    width: 100%;
+    height: fit-content;
+}
+.flyer img{
+    width: 100%;
+}
+    footer{
+        width: 100%;
+        
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+       padding-top: 4px;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+      
+        margin: 7px 0px;
+    
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+}
+    @media screen and (min-width:1001px){
+        .kibab_menu{
+            display: none;
+        }
+        
+        .freshers_info div img{
+            display: none;
+        }
+        .heritage{
+            text-align: center;
+        }
+        
+        .heritage_flyer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .flyer{
+            display: flex;
+            width: 100%;
+        justify-content: space-around;
+        }
+        .flyer img{
+            
+            width: 40%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .heritage_flyer p{
+            text-align: center;
+        }
+        .heritage_flyer p{
+            width: 100%;
+        }
+    }

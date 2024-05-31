@@ -1,0 +1,174 @@
+@media screen and (max-width:1000px){
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+    header nav{
+        display: none;
+    }
+    .logo{
+       
+        width: 60%;
+        left: -1rem;
+        position: relative;
+       
+        
+    }
+    .logo_img{
+        position: absolute;
+        left: 2rem;
+    }
+    .table{
+        width: 56%;
+        
+    }
+    .up{
+        min-height: 60vh;
+    }
+    .up .course_box{
+        height:100% ;
+    }
+.next{
+    display: none;
+}
+   .homeE{
+width: 40%;
+   } 
+   .course_box li{
+    font-size: 1.9rem;
+}
+ol{
+    font-size: 1.9rem;
+    color: blue;
+}
+table{
+    font-size: 1.7rem;
+}
+
+.course_box span:nth-child(1){
+    text-wrap: wrap;
+}
+
+.course_img img{
+    object-fit:scale-down;
+    display: block;
+    width: 30%;
+    height: 60%;
+}
+}
+
+
+@media screen and (max-width:450px) {
+    footer{
+        width: 100%;
+        
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+       padding-top: 4px;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        color: darkorange;
+        margin: 7px 0px;
+    
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-height:610px) and (max-width:400px){
+    .course{
+        margin-top: 30%;
+    }
+ 
+    .course_img{
+        height: 20%;
+       
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .table{
+        display: none;
+    }
+    .next{
+        display: inline;
+        width: 40%;
+    }
+    .homeE{
+        width: 40%;
+
+    }
+    .course_box{
+        height: 100%;
+        margin: 0;
+        
+    }
+    .course_box li{
+        font-size: 1.3rem;
+    }
+    .up .course_box
+    {
+        height: 70%;
+    }
+    
+   
+}
+@media screen and (max-width:677px) {
+    .up{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .up .course_box{
+        width: 47%;
+       
+    }
+
+    .course_box{
+        height: 70%;
+        width: 47%;
+    }
+    .down .course_box{
+        margin-top: 150px;
+    }
+    .course{
+        height: 200vh;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    .kibab_menu{
+        display: none;
+    }
+    .next{
+        display: none;
+    }
+}
+
+/* @media screen and(max-width:1000px){
+    
+}
+
+@media screen and(max-width:1000px){
+    
+} */

@@ -1,0 +1,507 @@
+@media (max-width:1000px){
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    header nav{
+        display: none;
+    }
+    .logo{
+       
+        width: 60%;
+        left: -1rem;
+        position: relative;
+         
+    }
+    .logo_img{
+        position: absolute;
+        left: 2rem;
+    }
+    .intro_text .about{
+        top: 70%;
+        font-size: 10px;
+    width: 16%;
+    }
+    
+    #intro{
+        
+        background: url(../ahans_images/buildin.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+ 
+    }
+    
+    #intro .intro_text{
+        font-size: 1.4rem;
+        color: white;
+      width: 100%;
+      height: 50%;
+     
+      background-color: rgba(42, 101, 165, 0.648);
+      margin-left:0;
+      text-align: center;
+      margin-top: 20rem;
+      z-index: 2;
+     
+    
+    }
+    .event{
+        width: 100%;
+        min-height:120vh ;
+        background: linear-gradient(to bottom,rgb(199, 124, 199), transparent,rgb(144, 127, 96));
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        
+    }
+    table{
+        display: inline;
+        
+    }
+    .avator_container{
+        display: none;
+    }
+    
+    .intrest_box_container{
+        width:100% ;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin:0 ;
+        
+    }
+   
+}
+/* @media screen and (min-width:750px) and (max-width:800px){
+    .logo{
+       
+        width: 60%;
+        left: -1rem;
+        position: relative;
+       
+     
+    }
+    .logo_img{
+        width: 25%;
+        height: fit-content;
+    }
+    header{
+        height: 9rem;
+    }
+    .sch_name{
+        width: 70%;
+        height: 80%;
+      
+        font-size: 4em;
+        margin-left:-7% ;
+    }
+    .sch_name::before,
+    .sch_name::after{
+        width: 7vw;
+        height: 7vh;
+        padding: px;
+        
+    }
+    .sch_name::after{
+    
+        left: 83%;
+    }
+    .kibab{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .kibab span{
+        height: 7px;
+    }
+    .intro_text {
+        display: none;
+    }
+    .onmoble_intro{
+        display: block;
+        text-wrap: wrap;
+        padding: 10px;
+        margin-top: -38%;
+        word-spacing: 12px;
+       
+    }
+    #intro{
+       background: none;
+        height: 50vh;
+        margin-bottom: 0;
+    }
+    #intro h1{
+        display: none;
+    }
+    #intro img{
+        width: 100%;
+        height: 100%;
+      visibility: visible;
+    }
+    .picture_scroll{
+        height:50vh;
+    }
+
+    .welcome{
+        background-color: ;
+    }
+} */
+
+@media screen and (min-width:552px) {
+    .intrest_box{
+        width: 80%;
+        height: 40%;
+      
+    }
+    table{
+        display: inline;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    .intrest_box{
+        width: 70%;
+        height: 40%;
+      
+    }
+}
+@media screen and (min-width:700px) {
+    .intrest_box{
+        width: 60%;
+        height: 40%;
+       
+       
+       
+    }
+}
+
+@media screen and (min-width:800px) {
+    .intrest_box{
+        width: 50%;
+        height: 40%;
+  
+    }
+}
+
+@media screen and (min-width:900px) {
+    .intrest_box{
+        width: 40%;
+        height: 40%;
+  
+    }
+
+}
+
+@media screen and (max-width:450px){
+   .intro_text{
+    display: none;
+   } 
+  /*intro on mobile*/
+.onmoble_intro{
+display: block;
+}
+  .welcome{
+    display: none;
+  }
+  /* welcome message on mobile*/
+  .less{
+    display: flex;
+    height:110vh;
+    margin-top: 10rem;
+    padding: 10px;
+  }
+ 
+.event{
+    display: none;
+}
+.less{
+   
+   
+    padding: 0;
+}
+.event_btn{
+    width: 60%;
+    padding: 15px;
+}
+.event_head{
+    font-size: 20px;
+    color: rgb(5, 58, 145);
+   font-family: sans-serif;
+   font-weight: 600;
+}
+.tester{
+    display: block;
+}
+
+/*mission*/
+.intrest_box_container{
+    width:100% ;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin:0 ;
+    gap: 2rem;
+    
+}
+.intrest_box{
+    width: 75%;
+    height: 80%;
+
+}
+.mission{
+height: 250vh;
+}
+
+.intrest_box_content{
+    top:73% ;
+ 
+}
+
+.intrest_box_content p{
+   
+    margin-top: -14%;
+}
+.intrest_box_content h2{
+    margin-top: .8rem;
+   
+}
+.intrest_box:nth-child(3){
+display: none;
+}
+.mediaBox{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    
+   height: fit-content;
+   text-align: center;
+   align-items: center;
+   align-content: center;
+   margin: 0;
+   padding-top: 4px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+   
+    margin: 7px 0px;
+
+    
+}
+.social_handles{
+    width: 30%;
+    height: 30%;
+    
+}
+.social_handles img{
+    width: 2rem;
+}
+footer span{
+    font-size: 1.7rem;
+}
+footer p{
+    font-size: 1.3rem;
+    
+}
+}
+
+
+@media only screen  and (min-width:370px) and (max-width:398px){
+    
+    
+    .intrest_box_content p{
+       
+        margin-top: -2%;
+    }
+}
+@media only screen  and (min-width:400px) and (max-width:450px){
+    
+    
+    .intrest_box_content p{
+       
+        margin-top: 2%;
+    }
+    .intrest_box{
+        height: 83%;
+        width: 70%;
+    }
+    .intrest_box_container{
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (min-width:1001px){
+    .kibab_menu{
+        display: none;
+    }
+    table{
+    
+        display: none;
+    }
+  
+    .event_img img{
+    width:55vw;
+    height:50vh;
+    
+    object-position:center;
+    
+}
+   
+}
+
+
+@media  screen and (max-width:390px) and (max-height:700px) and (max-height:800px){
+   .less{
+    height: auto;
+   } 
+   .app img{
+    height: 40vh;
+    width: 80;
+   }
+}
+@media (max-width:420px) {
+ .intrest_box_content p{
+     display: none;
+ }
+ .intrest_box_content:hover p{
+     display: block;
+ }
+}
+@media only screen and (min-height:840px) and (max-height:900px){
+    .less{
+        height: 75vh
+    }
+   
+    .intrest_box{
+        height: 45vh;
+    }
+    .mission{
+        height: 200vh;
+    }
+    .intrest_box_container{
+        gap: 4rem;
+    }
+    .intrest_box_content h2{
+        margin-top: 23%;
+    }
+    .intrest_box_content{
+        top:67%;
+    }
+    .intrest_box_content:hover{
+        top: 0;
+    }
+    
+.modal{
+    display: flex;
+   margin-top: -125rem;
+   height: 200vh;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+
+}
+.text_pop{
+    height: 30vh; 
+    margin-top: -5rem;
+}
+}
+@media only screen and (min-height:840px)and (max-height:900px){
+    .app img{
+        height: 30vh;
+    }
+}
+@media only screen and (min-height:905px)and (max-height:950px) {
+    .app img{
+        height: 40vh;
+        width: 60vw;
+    }
+    .intrest_box{
+        height: 37%;
+        width: 80vw;
+    }
+    .mission{
+        height: 220vh;
+    }
+    .intrest_box_content{
+       top: 40%;
+     
+    }
+    
+    .intrest_box_content h2{
+        margin-top:90% ;
+
+    }
+    .intrest_box_content:hover{
+        top: 0;
+        padding: 10px;
+        font-size: 1em;
+    }
+    .intrest_box_content:hover h2{
+       margin-top: 2rem;
+    }
+    .intrest_box_content p{
+        margin-top: 4rem;
+    }
+    .mediaBox{
+        display: none;
+    }
+    .intrest_box:nth-child(3){
+        display: block;
+    }
+    .less{
+        height: auto;
+    }
+}
+@media only screen and (min-height:600px) and (max-height:680px){
+    .intrest_box_content{
+        top: 50%;
+      
+     }
+     .intrest_box:nth-child(3){
+        display: block;
+     }
+     .mediaBox{
+        display: none;
+     }
+     .intrest_box_content h2{
+        margin-top: 12rem;
+     }
+     .intrest_box_content:hover{
+        top: 0;
+       text-align: start;
+        font-size: 1em;
+    }
+    .intrest_box_content:hover h2{
+       margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-height:600px) and (max-height:680px){
+
+}
+
+
+.intrest_box_content
+/* .intrest_box_content p{
+    text-align: center;
+    font-size: 24px;
+    color:rgb(2, 2, 2);
+   padding-top: 20px;
+}
+.intrest_box_content:hover{
+    transition: all 400ms ease-in;
+    top: 0;
+    box-shadow: inset 10px -100px 50px white,inset 10px -100px 70px white;
+ background: rgba(255, 255, 255, 0.514);
+
+}
+.intrest_box_content:hover>h2{
+    color: #46036d;
+} */

@@ -1,0 +1,84 @@
+@media screen and (max-width:1000px){
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+    header nav{
+        display: none;
+    }
+    .logo{
+       
+        width: 60%;
+        left: -1rem;
+        position: relative;
+       
+        
+    }
+    .logo_img{
+        position: absolute;
+        left: 2rem;
+    }
+ 
+}
+
+@media screen and (max-width:450px) {
+    .ad-head{
+        font-size: 3.2rem;
+    }
+    
+    .staff{
+       
+        height: fit-content;
+    }
+    .leaders{
+        gap: 3rem;
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+    footer{
+        width: 100%;
+        
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+       padding-top: 4px;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        color: darkorange;
+        margin: 7px 0px;
+    
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+}
+/* @media screen and(max-width:1000px){
+    
+}
+@media screen and(max-width:1000px){
+    
+}
+@media screen and(max-width:1000px){
+    
+} */
+@media screen and (min-width:1001px){
+    .kibab_menu{
+        display: none;
+    }
+}

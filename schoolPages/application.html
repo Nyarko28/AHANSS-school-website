@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../schoolStyle/application.css">
+    <link rel="stylesheet" href="../schoolMediaqueries/applicationmedia.css">
+</head>
+<body>
+
+    <!-- /*this was created by emmanuel nyarko (emmanuelnyarko284@gmail.com / lemonadimat@gmail.com/0561724025 / 0534086538) */ -->
+    <header>
+        <div class="logo"><img src="../ahans_images/logo.png" alt="ahanss badge" class="logo_img">
+            <span class="sch_name">AHANSS</span>
+        </div>
+        <nav>
+            <a href="../school.html"> <li >Homepage</li></a>
+            <a href="../schoolPages/contact.html" > <li class="contactbtn">Contact US</li></a>
+            <a href="../schoolPages/nwe.html"> <li >Administration</li></a>
+            <a href="../schoolPages/event.html"> <li >Event</li></a>
+            <a href="../schoolPages/admission.html"> <li >Admission</li></a>
+             
+        </nav>
+        <!-- humber icon and it menu -->
+        <div class="kibab" onclick="see()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <div class="kibab_menu" >
+
+                <div class="cross_kibab" onclick="unsee()">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav class="menu_item">
+                    <a href="../school.html"> <li >Homepage</li></a>
+                    <a href="../schoolPages/admission.html"> <li >Admission</li></a>
+                    <a href="../schoolPages/event.html"> <li >Event</li></a>
+                    <a href=""> <li >Administration</li></a>
+                    <a href="../schoolPages/contact.html" > <li >Contact Us</li></a>
+                     
+                 </nav>
+            </div>
+            
+        </header>
+    <form action="../applicant_details.php" method="post" id="form" enctype="multipart/form-data">
+        <div class="application_inner">
+            <head>
+                <div class="application_head">
+                    <img src="../ahans_images/logo.png" alt="AHANSS logo">
+                    <h2 class="full_shcoolname">
+                        AHANTAMAN GIRLS SENIOR HIGH SCHOOL (AHANSS)
+                    </h2>
+                    <address>PO BOX 144X  KETAN-SEKONDI</address>
+
+                </div>
+            </head>
+            <div class="passport_box">
+                photo
+                <div class="pic_container"></div>
+        <input type="file" id="passport" name="photo" >
+    </div>
+            <div class="input_container">
+                <label for="">Name of Applicant<input type="text" id="name" required name="name"></label>
+            <label for="">Date of birth <input type="date" name="date" style="margin-left: 4.4rem;" required></label>
+            <label for="">Address<textarea name="address" id="" cols="30" rows="2" placeholder="e.g  Takoradi" style="margin-left: 6.4rem;"></textarea></label>
+            <label for="">Father's Name<input type="text" style="margin-left: 3.8rem;" required name="father"></label>
+            <label for="">Mother's Name<input type="text" style="margin-left: 3.5rem;" required name="mother"></label>
+           
+            <label for="">Phone Number<input type="number" style="margin-left: 3.5rem;" required name="phone"></label>
+            <label for="email">Email<input type="email" style="margin-left: 7.3rem;" required name="email" ></label>
+
+            <label for="">Course 
+                <select name="course" id="course" style="margin-left: 6.6rem;">
+               <option value="">Select your Course</option>
+               
+                <option value="General Science">General Science</option>
+                <option value="General Art"> General Art</option>
+                <option value="ho">Home Economics</option>
+                <option value="">Bussiness</option>
+                <option value="Visual Art">Visual Art</option>
+                <option value="">Agricultural Science</option>
+                </select>
+            </label>
+            </div>
+          <div class="grade_area">
+            <span>Acadamic Qualifications:</span>
+            <table cellspacing="0">
+             <thead>
+                <tr>
+                 <th>SUBJECT</th>
+                 <th>GRADE</th>
+                 
+             </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MATH</td>
+                    <td> <input type="number" required></td>
+                </tr>
+                    <td>SCIENCE</td>
+                    <td> <input type="number" required></td>
+                </tr>
+                    <td>ENGLISH</td>
+                    <td> <input type="number" required></td>
+                </tr>
+                    <tr>
+                    <td><Select>
+                        <OPtion>OTHER SUBJECT</OPtion>
+                        <option value="ICT">ICT</option>
+                        <option value="home_econs">HOME Economics</option>
+                        <option value="Social Studies">Social Studies</option>
+                        <option value=" RME">RME</option>
+                    </Select>
+                    </td>
+                    <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                       
+                    <tr>
+                    <td><Select>
+                        <OPtion>OTHER SUBJECT</OPtion>
+                        <option value="ICT">ICT</option>
+                        <option value="home_econs">HOME Economics</option>
+                        <option value="Social Studies">Social Studies</option>
+                        <option value=" RME">RME</option>
+                    </Select>
+                    </td>
+                    <td><input type="number" required></td>
+                    </tr>
+                    <tr>
+                       
+
+                        <td>
+                            <Select>
+                                <OPtion>OTHER SUBJECT</OPtion>
+                                <option value="ICT">ICT</option>
+                                <option value="home_econs">HOME Economics</option>
+                                <option value="Social Studies">Social Studies</option>
+                                <option value=" RME">RME</option>
+                            </Select>
+                        </td>
+                        <td><input type="number" required></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="declaration">
+                        TThe statement made & filled in different colunms are true to the best of my knowledge & belief. I fully understand every thing & have personally filled up the colunms. If  my admission is unsuccessful neither myself nor my guardian shall hold the school responsible.
+                    </div>
+                </div>
+                
+            </div>
+            <button form="form" type="submit" name="submit"> submit</button>
+    </form>
+    <!-- /*this was created by emmanuel nyarko (emmanuelnyarko284@gmail.com / lemonadimat@gmail.com/0561724025 / 0534086538) */ -->
+   
+    <!-- footer -->
+<section>
+    <footer>
+        <span>You can follow us</span>
+        <div class="social_handles">
+           <a href="https://www.facebook.com/profile.php?id=100057655951412" target="_blank"> <img src="../link_avators/fac (1).png" alt=""></a>
+           <a href="http://www.instagram.com/ahgissroyals.live" target="_blank"><img src="../link_avators/fac (2).png" alt=""></a> 
+            <a href="https://youtu.be/porBewx63YI?si=KYsPIFI8DqSeg0OZ" target="_blank"><img src="../link_avators/fac (3).png" alt=""></a>
+            <a href="" target="_blank"><img src="../link_avators/fac (4).png" alt="rtiktok" ></a>
+        </div>
+           
+        <nav class="foot-nav">
+           <li> <a href="./school.html"> Homepage</a></li>
+             <li ><a href="../schoolPages/admission.html">Admission</a>
+             <li ><a href="../schoolPages/event.html">Event</a></li>
+     <li><a href="../schoolPages/nwe.html"> Administration</a></li>
+             <li ><a href="../schoolPages/contact.html" >Contact Us</a></li>
+             
+         </nav>
+         <p>&copy 2024  &nbsp;AHANSS all right reserved  </p>
+        <small style="padding: 4px;">  designed  by ADIMAT &trade;</small>
+         
+    </footer>
+</section>
+
+    <script src="../school_javascript/kibab_nav.js"></script>
+   <script src="../school_javascript/application.js"></script>
+</body>
+</html>

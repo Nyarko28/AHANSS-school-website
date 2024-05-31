@@ -1,0 +1,844 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.intro_container{
+    width: 100%;
+    height: 100vh;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(214, 231, 239);
+    text-align: center;
+    align-items: center;
+    
+  
+}
+nav{
+    display: flex;
+    color: black;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(4, 41, 101);
+
+}
+nav  li{
+    list-style: none;
+}
+.logo{
+    width: 20%;
+    height: 80%;  
+    z-index: 1;
+}
+.logo_img{
+    
+    width: 30%;
+    height: 90%;
+}
+/*  menu on mobile*/
+.kibab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 28px;
+    display: none;
+    cursor: pointer;
+    
+}
+.kibab span{
+    width:100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+   
+}
+.kibab_menu{ 
+   
+ top: 1px;
+    background-color: rgb(205, 199, 199);
+    position: absolute;
+    width: 0%;
+    height:100vh; 
+    z-index: 10;
+   right: 0;
+    text-align: center;
+align-items: center;
+place-content: center;
+background: linear-gradient(to right,rgba(53, 173, 248, 0.927),rgba(251, 251, 107, 0.84));
+transition: 500ms  ease-in-out;
+
+    
+}
+
+
+.cross_kibab{
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    width: 28px;
+    place-self: center;
+    cursor: pointer;
+    background-color: aliceblue;
+    top: 20px;
+    left: 17px;
+    display: none;
+}
+
+.cross_kibab span{
+    position: absolute;
+    width:2px;
+    height: 100%;
+    background-color: black;
+    transition: all 0.3s ease-in;
+    
+}
+.cross_kibab :nth-child(1){
+    rotate: 40deg;
+}
+.cross_kibab :nth-child(2){
+    rotate: -40deg;
+}
+.menu_item{
+   
+    
+  
+    flex-direction: column;
+    color:black;
+    justify-content: center;
+    text-align: center;
+    z-index: 6;
+    margin-left: 12%;
+  
+}
+.menu_item li{
+    color: #46036d;
+font-size: 28px;
+font-family: sans-serif;
+display: inline;
+}
+
+ 
+.sch_name{
+    font-size: 2rem;
+    padding-top: 1rem;
+    
+    color: rgb(42, 45, 236);
+    position: absolute;
+    margin-left: 29px;
+    cursor: pointer;
+    
+}
+.contactbtn{
+   width: 6rem;
+   padding: 2px;
+   border: 1px solid rgb(19, 55, 236);
+   background-color: rgba(25, 125, 232, 0.852);
+   color: rgb(240, 245, 249);
+   border-radius: 5px;
+}
+.contactbtn:hover{
+  
+   transition: all 300ms ease;
+   background-color: rgb(9, 134, 169);
+   border: 1px solid rgb(9, 134, 169);
+}
+ .sch_name::before{
+    content: "..";
+    width: 20px;
+    color: rgb(183, 0, 255);
+    height: 2rem;
+    margin-left: -12px;
+    border-top: 4px solid rgb(0, 81, 255);
+    border-left: 5px solid rgb(42, 109, 210);
+    position:absolute; 
+    
+}
+.sch_name::after{
+    content: ".";
+    width: 20px;
+    height: 2rem;
+   
+    position: absolute;
+    border-bottom: 4px solid rgb(0, 81, 255);
+    border-right: 5px solid rgb(42, 109, 210);
+    
+} 
+/* intro */
+#intro{
+    width: 100%;
+    height: 65vh;
+    background: url(../ahans_images/buildin.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    margin-top: -16px;
+   
+   
+}
+#intro h1{
+    padding: 1rem;
+    color: white;
+}
+#intro .intro_text{
+    font-size: 1.3rem;
+    color: white;
+  width: 90%;
+  height: 80%;
+  align-self: center;
+  background-color: rgba(42, 101, 165, 0.648);
+  margin-left: 5%;
+  text-align: center;
+  margin-top: 4rem;
+  z-index: 2;
+ position: relative;
+
+}
+ .intro_text .about{
+   
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+  top: 80%;
+  right: 7%;
+    
+    padding: 10px;
+}
+ a{
+    text-decoration: none;
+}
+.intro_text p{
+    width: 50%;
+    position: absolute;
+    left: 7%;
+    padding: 70px;
+    text-wrap: wrap;
+    text-transform: capitalize;
+    transition:all  3s  ease-in;
+
+    text-shadow: 0px 30px 30px #c13a3a,inset 3px 14 6px indigo;
+    animation: bounce 3s linear step-end;
+}
+
+/*intro on mobile*/
+.onmoble_intro{
+  
+    background-color: #dae4ef8e;
+    font-size: 1.2em;
+    padding: 5px;
+    margin-bottom: 3rem;
+    display: none;
+}
+.onmoble_intro  a{
+    border-radius: 10px;
+    background-color: #3c61f7;
+    font-size: 15px;
+    padding: 4px;
+    color: white;
+    
+}
+
+.intro_text .about:hover{
+transition: all 600ms ease;
+background-color: rgb(19, 5, 5);
+
+}
+.picture_scroll{
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 4rem;
+}
+.slide{
+    width: 100%;
+    height: 99%;
+    
+    background-color: azure;
+    place-self: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    animation: change 10s ease 300ms infinite;
+    position: relative;
+  animation-direction: alternate;
+}
+ @keyframes change{
+    1%{
+        background-image: url(../ahans_images/Ahantaman-girls-shs..webp);
+        
+    }
+    13%{
+        background-image: url(../ahans_images/student\ \(2\).jpg);
+    }
+    20%{
+        background-image: url(../ahans_images/Screenshot_20240508-124928.png);
+    }
+    40%{
+        background-image: url(../ahans_images/band\ \(3\).jpg);
+    }
+    60%{
+        background-image: url(../ahans_images/student\ \(3\).jpg);
+    }
+    80%{
+        background-image: url(../ahans_images/student.jpg);
+    }
+    100%{
+        background-image: url(../ahans_images/student\ \(1\).jpg);
+    }
+} 
+ .slide img{
+    width: 100%;
+    height: 100%;
+  
+  
+ }
+
+
+
+
+.avator_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+margin-top: 4rem;
+    height: 30vh;
+    place-self: center;
+    text-align: center;
+    font-size: 14px;
+   font-family: 'Times New Roman';
+ 
+ 
+}
+
+.avator_container li{
+    list-style: none;
+
+}
+.link_img{
+   width:  8%;
+   height: 40%;
+ 
+   margin: 2rem;
+}
+.link_img img{
+    width: 80%;
+    height: auto;
+}
+/* on small screen */
+table{
+    
+ display: none;
+ margin-left: 10%;
+}
+table .link_img{
+    width:  20vw;
+    height: auto;
+   
+ }
+ table.link_img img{
+    width: 100%;
+    height: 100%;
+}
+td{
+    border-right: 2px solid;
+}
+td{
+    border-bottom: 2px solid;
+}
+tr:nth-child(2)>td{
+    border-bottom: none;
+}
+tr:nth-child(1)>td:nth-child(2){
+    border-right: none;
+}
+tr:nth-child(2)>td:nth-child(2){
+    border-right: none;
+}
+td li{
+    list-style: none;
+}
+.welcome{
+    width: 100%;
+   margin-top: 10em;
+  display: flex;
+  flex-wrap: wrap;
+    min-height:fit-content;
+   
+    max-height: fit-content;
+justify-content: center;
+    padding: 20px;
+}
+.head_img{
+width: 40%;
+height: 30%;
+
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+text-align: center;
+}
+
+
+.head_img h3{
+  font-family: sans-serif;
+    color: #f40785;
+    font-size: 1.4rem;
+   margin-top:9px
+   
+   
+
+}
+.welcome_speech{
+    width: 50%;
+    background-color: #f7fbfd;
+   
+
+} 
+.welcome_speech h2{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    width: 80%;
+    text-wrap: wrap;
+    text-align: center;
+}
+.welcome_speech p{
+width: 80%;
+margin-left: 10%;
+font-size: 1.1rem;
+}
+
+/*welcome message on mobile*/
+.less{
+ 
+    flex-direction: column;
+    justify-content: center;
+  
+
+display: none;
+padding: 0;
+
+
+}
+.less .head_img {
+    width: 90%;
+    margin-left: 5.3%;
+    height: 59%;
+   background: none;
+   
+}
+.less .head_img img{
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px ;
+    
+}
+.less .welcome_speech{
+ 
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px ;
+    border-bottom: 1px solid rgb(166, 166, 166);
+    box-shadow:  -2px 4px  15px   #cfcfcf;
+   border-left:1px solid rgb(166, 166, 166);
+   border-right: 1px solid rgb(166, 166, 166);
+   margin-top: -3%;
+  
+}
+.less a{
+    width: 12%;
+   
+    border: 2px solid rgb(103, 162, 225);
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(22, 82, 135);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  
+  
+}
+
+.event{
+    max-width: 100%;
+    background: linear-grdient(to bottom,rgb(245, 3, 184),rgb(144, 127, 96));
+   display: grid;
+   grid-template-columns:30% 30% 30%;
+  max-width: 1400px;
+ grid-template-rows: 30% ;
+  place-items: center;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+.event_box{
+    background: none;
+   
+    
+   margin-top: 2rem;
+    padding: 10px;
+    border-radius: 7px;
+}
+.event_box:hover{
+    box-shadow: -5px 5px 19px 5px rgb(124, 138, 138);
+    transform: scale(0.96);
+}
+.event_box:nth-child(1){
+    background: #d8d2dc;
+   
+}
+.event_box:nth-child(2){
+    background-color: #e0e32e;
+}
+.event_box:nth-child(3){
+    background-color: #0088ff;
+}
+.event_box:nth-child(4){
+    background-color: rgb(154, 255, 240);
+}
+.event_box:nth-child(5){
+    background-color: rgb(106, 75, 245);
+}
+.event_box:nth-child(6){
+    background: #d8d2dc;
+}
+.event img{
+   width: 27vw;
+object-fit: contain;
+  object-position: center;
+height: 40vh;
+  
+ 
+}
+
+ /* .stool{
+    background: url(../ahans_images/enstool.jpg);
+     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+}
+.fun{
+    background: url(../ahans_images/funnight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cadet{
+    background: url(../ahans_images/cadet.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.culture{
+    background: url(../ahans_images/cult.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.game{
+    background: url(../ahans_images/GAA-Circuit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.science{
+    background: url(../ahans_images/smart-young-african-american-schoolgirl-studying-electronics-her-science-hobby-robotics-project-girl-working-robot-room-268115392.jpg);
+    background-position: centerr;
+    background-repeat: no-repeat;
+    background-size: cover;   
+} */
+.event_btn{
+    
+    height: 4%;
+   border-radius: 12px;
+    border: 2px solid rgb(76, 66, 62);
+    text-align: center;
+   
+    place-items:center ;
+    place-content: center;
+    padding:10px;
+   
+   margin-top: 10px;
+}
+
+
+.mission{
+width: 100%;
+height: 200vh;
+background: url(../ahans_images/1713714338069.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin-top: 7rem;
+}
+.intrest_box_container{
+    width:75% ;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+   gap: 3rem;
+    justify-content: center;
+    place-self: center;
+    margin-left: 12.5%;
+}
+ /* .intrest_box_container::before{
+    content: "  of interest";
+    position: absolute;
+    width: 98.5%;
+    right: -1rem;
+    height: 196.6%;
+    word-spacing: 3px;
+    padding-top: 1rem;
+    left: 0;
+    padding-left: 1rem;
+    top: 94rem;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+    background-color: rgba(29, 81, 186, 0.397);
+}  */
+.intrest_box{
+    width: 40%;
+    height: 40%;
+   
+    margin: 20px;
+    place-self: center;
+    position: relative;
+    overflow: hidden;
+   
+    
+}
+ .interest_box_img{
+    width: 100%;
+    height: 100%;
+    background: url(../ahans_images/OIP\ \(2\).jpg);
+   background-position: 20%;
+    position: absolute;
+    z-index: 1;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+} 
+.caring{
+    background-image: url(../ahans_images/care.jpg);
+    background-position: center;
+  
+}
+ .success{
+    background-image: url(../ahans_images/Oak_Tech_008-1200x750-1-800x500.jpeg);
+  
+}
+.intrest_box_content h2{
+    color: rgb(238, 10, 10);
+    font-family: sans-serif;
+    margin-top: 2rem;
+    
+}
+
+.intrest_box_content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    
+    z-index: 10;
+  top: 18rem;
+  text-align: center;
+  box-shadow: inset 0 -280px 10px white,inset 0 -350px 20px white; 
+
+}
+.intrest_box_content p{
+    text-align: center;
+    font-size: 24px;
+    color:rgb(2, 2, 2);
+   padding-top: 20px;
+}
+.intrest_box_content:hover{
+    transition: all 400ms ease-in;
+    top: 0;
+    box-shadow: inset 10px -100px 50px white,inset 10px -100px 70px white;
+ background: rgba(255, 255, 255, 0.514);
+
+}
+.intrest_box_content:hover>h2{
+    color: #46036d;
+}
+
+.mediaBox{
+ 
+ display: none;
+}
+.text_pop{
+   background-color: #faf8fc;
+    font-size: 18px;
+    border-radius: 10px;
+  z-index: 30;
+margin-top: 23rem;
+width: 98%;
+ margin-left: 1%;
+ 
+ 
+}
+.modal{
+    backdrop-filter:blur(2px) ;
+    
+   
+    height:250vh;
+    width: 100%;
+    top: 648%;
+    position: absolute;
+    z-index: 13;
+   display: none;
+    
+   
+}
+
+.shwbtn{
+    width: 80%;
+    
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: rgb(63, 133, 246);
+    font-size: 16px;
+    color: white;
+    transition:  0.3s;
+    margin-top: 1rem;
+}
+.clsbtn{
+   font-size: 25px;
+   font-weight: 700;
+   color: #030202;
+   position: absolute;
+   right: 7px;
+   border-radius: 10px;
+   
+  
+}
+.shwbtn:hover{
+    background-color: rgb(45, 73, 117);
+}
+
+footer{
+    background-color: rgb(241, 241, 241); 
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   margin-top: 3rem;
+    
+  }
+  .social_handles{
+    width: 50%;
+   
+    height: 28%;
+    place-self:center ;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 14px;
+
+  }
+  .social_handles img{
+    height: 70%;
+    
+  }
+  .social_handles img:hover{
+    transform: scale(1.2);
+
+  }
+  .foot-nav{
+    display: flex;
+    justify-content: center;
+   font-size: 1.3rem;
+   ;
+  
+   
+  }
+  footer p{
+    margin-bottom: -.2rem;
+  }
+  footer span{
+    font-size: large;
+    color: rgb(252, 69, 18);
+    display: inline-block;
+  }
+  
+
+  /*event on mobile*/
+  .tester{
+    text-align: center;
+    margin-top: 7em;
+    display: none;
+  }
+  .event_mobile{
+    display: flex;
+    gap: 1rem;
+    overflow: scroll;
+
+    text-align: center;
+    
+    
+  }
+  .tester h1{
+    font-family: san serif;
+   
+  }
+  .app{
+
+    background-color: #d8d2dc;
+    border-radius: 10px;
+   padding: 30px;
+   padding-top: 10px;
+ color:white;
+ margin: 5px;
+position: relative;
+ box-shadow: 0px 5px 6px 6px rgba(0, 0, 0,0.4);
+  }
+  
+  .app img{
+  width:50vw;
+  height: 55vh;
+  object-fit: cover; 
+  object-position: center;
+    
+  }

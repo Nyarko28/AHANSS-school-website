@@ -1,0 +1,368 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(214, 231, 239);
+    text-align: center;
+    align-items: center;
+    
+  
+}
+nav{
+    display: flex;
+    color: black;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(4, 41, 101);
+
+}
+nav a li{
+    list-style: none;
+}
+.logo{
+    width: 20%;
+    height: 80%;  
+    z-index: 1;
+}
+.logo_img{
+    
+    width: 30%;
+    height: 100%;
+}
+/*  menu on mobile*/
+.kibab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 28px;
+    display: none;
+    cursor: pointer;
+    
+}
+.kibab span{
+    width:100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+   
+}
+.kibab_menu{ 
+   
+ top: 1px;
+    background-color: rgb(205, 199, 199);
+    position: absolute;
+    width: 0%;
+    height:100vh; 
+    z-index: 10;
+   right: 0;
+    text-align: center;
+align-items: center;
+place-content: center;
+background: linear-gradient(to right,rgba(53, 173, 248, 0.927),rgba(251, 251, 107, 0.84));
+transition: 500ms  ease-in-out;
+
+    
+}
+
+
+.cross_kibab{
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    width: 28px;
+    place-self: center;
+    cursor: pointer;
+    background-color: aliceblue;
+    top: 20px;
+    left: 17px;
+    display: none;
+}
+
+.cross_kibab span{
+    position: absolute;
+    width:2px;
+    height: 100%;
+    background-color: black;
+    transition: all 0.3s ease-in;
+    
+}
+.cross_kibab :nth-child(1){
+    rotate: 40deg;
+}
+.cross_kibab :nth-child(2){
+    rotate: -40deg;
+}
+.menu_item{
+ 
+    flex-direction: column;
+    color:black;
+    justify-content: center;
+    text-align: center;
+    z-index: 6;
+    margin-left: 12%;
+  
+}
+.menu_item li{
+    color: #46036d;
+font-size: 28px;
+font-family: sans-serif;
+display: inline;
+}
+
+ 
+.sch_name{
+    font-size: 2rem;
+    padding-top: 1rem;
+    
+    color: rgb(42, 45, 236);
+    position: absolute;
+    margin-left: 29px;
+    cursor: pointer;
+    
+}
+.contactbtn{
+   width: 6rem;
+   padding: 2px;
+   border: 1px solid rgb(19, 55, 236);
+   background-color: rgba(25, 125, 232, 0.852);
+   color: rgb(240, 245, 249);
+   border-radius: 5px;
+}
+.contactbtn:hover{
+  
+   transition: all 300ms ease;
+   background-color: rgb(9, 134, 169);
+   border: 1px solid rgb(9, 134, 169);
+}
+ .sch_name::before{
+    content: "..";
+    width: 20px;
+    color: rgb(183, 0, 255);
+    height: 2rem;
+    margin-left: -12px;
+    border-top: 4px solid rgb(0, 81, 255);
+    border-left: 5px solid rgb(42, 109, 210);
+    position:absolute; 
+    
+}
+.sch_name::after{
+    content: ".";
+    width: 20px;
+    height: 2rem;
+   
+    position: absolute;
+    border-bottom: 4px solid rgb(0, 81, 255);
+    border-right: 5px solid rgb(42, 109, 210);
+    
+} 
+
+/* main container */
+.parallax{
+   height: 100vh;
+    width: 100%;
+z-index: 1;
+    ; 
+
+}
+.contact_intro{
+    width: 100%;
+    height: 50%;
+   background-image: url(../link_avators/depositphotos_52470369-stock-illustration-people-holding-words-contact-us.jpg);
+  background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-origin: border-box;
+   background-attachment: fixed
+  
+   
+   ;
+}
+.contact_welcome{
+    background-color: rgba(5, 51, 144, 0.085);
+    width: 100%;
+   text-align: center;
+    height: 100%;
+    margin-top: -1px;
+}
+.contact_info{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+   margin-top: 4%;
+    place-self: center;
+    align-self: center;
+    margin-left: 10%;
+    
+}
+.contact_info a{
+    text-decoration: none;
+}
+.break{
+    display: none;
+}
+.contact_card{
+    width: 20%;
+   
+
+    border: 2p solid black;
+    text-align: center;
+    box-shadow: 5px 3px 9px rgb(151, 151, 151);
+ word-break: break-all;
+}
+.contact_card img{
+    width: 20%;
+    height: 15%;
+}
+.contact_card p{
+    font-weight: 800;
+}
+.container{
+    margin-top: 3rem;
+      width: 30%;
+      height: 80vh;
+      text-align: center;
+      border-radius: 10px;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 9px rgb(151, 151, 151);
+      
+      
+  }
+  h1{
+      cursor: default;
+      height: 2rem;
+      margin-top: 2px;
+  }
+  h1 span{
+     color: rgb(74, 241, 65);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+     
+  }
+  input{
+      width: 90%;
+      height: 7vh;
+      align-self: center;
+      color: black;
+      font-size: 14px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid black;
+      margin-top: -.4rem
+  }.parallax{
+    width: 100%;
+    height: 100vh;
+  }
+  /* form btn */
+  .login{
+      align-self: center;
+      width: 40%;
+      font-size: 19px;
+      border-radius: 19px;
+      height: 6vh;
+     margin-bottom: 7px;
+     
+     
+  }
+  textarea{
+  max-width: 90%;
+ min-height: 16vh ;
+  min-width: 90%;
+  place-self: center;
+  margin-top: -1.2rem;
+  
+ 
+  }
+  .textarea_head{
+    height: 1.2rem;
+   
+  }
+  .map_flex{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+   
+  }
+  .comment{
+    
+    background: url(../parallax-images/ask-us-contact-information-assistance-260nw-379186726.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 80vh;
+    margin-top: 3rem;
+  }
+  footer{
+    background-color: rgb(241, 241, 241); 
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+    
+  }
+  .social_handles{
+    width: 50%;
+   
+    height: 28%;
+    place-self:center ;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 14px;
+
+  }
+  .social_handles img{
+    height: 70%;
+    
+  }
+  .social_handles img:hover{
+    transform: scale(1.2);
+
+  }
+  .foot-nav{
+    display: flex;
+    justify-content: center;
+   font-size: 1.3rem;
+   ;
+  
+   
+  }
+  .foot-nav li{
+    list-style: none;
+  }
+  footer p{
+    margin-bottom: -.2rem;
+  }
+  footer span{
+    font-size: large;
+    color: rgb(252, 69, 18);
+    display: inline-block;
+    
+  }
+  

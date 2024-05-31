@@ -1,0 +1,136 @@
+@media screen and (max-width:1000px){
+    body{
+        margin: 0;
+    }
+    header nav{
+        display: none;
+    }
+    header{
+        height: 8rem;
+    }
+    .logo{
+        width: 80%;
+        margin-left: -20%;
+    }
+    .sch_name{
+        
+        
+        padding-top: 2rem;
+     
+      
+    }
+    .kibab{
+        display: flex;
+        margin-right: 1rem;
+    }
+    #opennav:checked~.kibab_menu{
+        display: flex;
+    }
+   .kibab_menu{
+    display:blok;
+   }
+   .menu_item{
+    display: flex;
+   }
+    footer{
+        padding: 8px;
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        color: darkorange;
+
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+    }
+    .social_handles img{
+        width: 30%;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+    .card_row1{
+        display: flex; 
+        flex-direction: column;
+height: 40%;
+margin-top: -19rem;
+gap: 0;
+       
+}
+    .card_row2{
+        display: flex; 
+        flex-direction: column;
+        height: 40%;
+        margin-top: -45rem;
+}
+.main_card_container{
+    background-color: aquamarine;
+    height: 500vh;
+}
+.card_container{
+    height: 80%;
+}
+.card{
+    width: 100%;
+    height: 20%;
+}
+.card_img{
+    width: 40%;
+    place-self: center;
+}
+.card span{
+    font-size:24px;
+}
+.card p{
+    font-size: 1.rem;
+}
+.staff_comment{
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width:450px) {
+    footer{
+        width: 100%;
+        
+       height: fit-content;
+       text-align: center;
+       align-items: center;
+       align-content: center;
+       margin: 0;
+       padding-top: 4px;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        color: darkorange;
+        margin: 7px 0px;
+    
+        
+    }
+    .social_handles{
+        width: 30%;
+        height: 30%;
+        
+    }
+    .social_handles img{
+        width: 2rem;
+    }
+    footer span{
+        font-size: 1.7rem;
+    }
+    footer p{
+        font-size: 1.3rem;
+    }
+}
