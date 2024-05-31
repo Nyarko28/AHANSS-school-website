@@ -28,7 +28,7 @@ $row=mysqli_fecth_assoc($query);
             <span class="sch_name">AHANSS</span>
         </div>
         <nav>
-            <a href="../school.html"> <li >Homepage</li></a>
+            <a href="../index.html"> <li >Homepage</li></a>
             <a href="../schoolPages/contact.html" > <li class="contactbtn">Contact US</li></a>
             <a href="../schoolPages/nwe.html"> <li >Administration</li></a>
             <a href="../schoolPages/event.html"> <li >Event</li></a>
@@ -49,7 +49,7 @@ $row=mysqli_fecth_assoc($query);
                 </div>
                 
                 <nav class="menu_item">
-                    <a href="../school.html"> <li >Homepage</li></a>
+                    <a href="../index.html"> <li >Homepage</li></a>
                     <a href="../schoolPages/admission.html"> <li >Admission</li></a>
                     <a href="../schoolPages/event.html"> <li >Event</li></a>
                     <a href=""> <li >Administration</li></a>
