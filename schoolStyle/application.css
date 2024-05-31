@@ -46,7 +46,6 @@ nav  li{
     height: 100%;
 }
 
-/*  menu on mobile*/
 .kibab{
     display: flex;
     flex-direction: column;
@@ -129,6 +128,7 @@ font-size: 28px;
 font-family: sans-serif;
 display: inline;
 }
+
  
 .sch_name{
     font-size: 2rem;
@@ -174,7 +174,7 @@ display: inline;
     border-bottom: 4px solid rgb(0, 81, 255);
     border-right: 5px solid rgb(42, 109, 210);
     
-}
+} 
 form head{
     width: 100%;
     height: 10%;

@@ -32,12 +32,13 @@ $query=mysqli_query($db_connect,$sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="letter.css">
-    <link rel="stylesheet" href="./schoolMediaqueries/applicationmedia.css">
+    <link rel="stylesheet" href="../schoolStyle/letter.css">
+    <
+    <link rel="stylesheet" href="../schoolMediaqueries/applicationmedia.css">
 </head>
 <body>
     <header>
-        <div class="logo"><img src="./ahans_images/logo.png" alt="ahanss badge" class="logo_img">
+        <div class="logo"><img src="../ahans_images/logo.png" alt="ahanss badge" class="logo_img">
             <span class="sch_name">AHANSS</span>
         </div>
         <nav>

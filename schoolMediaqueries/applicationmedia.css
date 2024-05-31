@@ -1,7 +1,8 @@
-@media screen and (max-width:1000px){
+@media (max-width:1000px){
     .kibab{
         display: flex;
         margin-right: 1rem;
+        transition: all 0.3s ease-in-out;
     }
     header nav{
         display: none;
@@ -11,19 +12,15 @@
         width: 60%;
         left: -1rem;
         position: relative;
-       
-        
+         
     }
     .logo_img{
         position: absolute;
         left: 2rem;
     }
-    
-    
+  
 }
-
-
-@media screen and (max-width:450px) {
+@media screen and (max-width:700px) {
     footer{
         width: 100%;
         
@@ -37,7 +34,7 @@
     footer nav{
         display: flex;
         flex-direction: column;
-        color: darkorange;
+       
         margin: 7px 0px;
     
         
@@ -55,10 +52,13 @@
     }
     footer p{
         font-size: 1.3rem;
+        
     }
-}
-@media screen and (min-width:1001px){
-    .kibab_menu{
-        display: none;
     }
-}
+    @media screen and (min-width:1001px){
+        
+        .kibab_menu{
+            display: none;
+        }
+            
+    }
